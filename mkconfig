@@ -1,0 +1,24 @@
+CC = tcc
+LD = $CC
+ROOT = /usr/local
+
+USR = /usr
+USRINC = $USR/include
+USRLIB = $USR/lib
+
+X11 = $USR/X11R6
+X11INC = $X11/include
+X11LIB = $X11/lib
+
+FREETYPEINC = $USRINC/freetype2
+
+# Xinerama.
+# Comment if you don't want it.
+XINERAMALIB  = -lXinerama
+XINERAMAFLAGS = -DXINERAMA
+
+ADDCPPFLAGS = $ADDCPPFLAGS
+
+ADDCFLAGS =
+#ADDCFLAGS = $ADDCFLAGS -O3 -static -std=c99
+#ADDCFLAGS = $ADDCFLAGS -Os -pedantic -std=c99 -Wall
