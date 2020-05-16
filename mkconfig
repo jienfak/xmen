@@ -1,6 +1,8 @@
 CC = tcc
 LD = $CC
-ROOT = /usr/local
+ROOT = $HOME/local
+BIN = $ROOT/bin
+NAME = xmen
 
 USR = /usr
 USRINC = $USR/include
